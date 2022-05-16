@@ -37,12 +37,11 @@ const[location, setLocation]=useState('');
 const[fullname, setFullname]=useState('');
 const[amount, setAmount]=useState('');
 const[pin, setPin]=useState('');
-// const[isPending,SetIsPending]=useState(false)
 
 
 
 
-// SetIsPending(true);
+
 
 console.log(formData)
 
@@ -230,7 +229,7 @@ console.log(formData)
   <td></td>
   <td></td>
   </tr>
-  
+
   <tr>
   <td></td>
   <td></td>
