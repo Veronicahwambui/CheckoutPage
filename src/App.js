@@ -230,18 +230,14 @@ console.log(formData)
   <td></td>
   <td></td>
   </tr>
+  
+  <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  </tr>
 
-  {/* {deta.map(deta=> (
-              <tr key={deta.id} >
-        
-                      <td>{deta.FirstName}</td>
-                       <td>{deta.LastName}</td>
-                      <td>{deta.address}</td>
-                      
-              </tr>
-                   
-           
-          ))} */}
+  
 
 
    
