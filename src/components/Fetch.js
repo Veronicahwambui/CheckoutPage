@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 
 
-    
+
 
 const Fetch = () => {
   const [deta, setDeta] = useState([])
@@ -26,42 +26,42 @@ const Fetch = () => {
     <div>
 
 
-<div>
+      <div>
 
-<h1> Customer Details</h1>
-<table>
-  <tr>
-    <th>FirstName</th>
-    <th>LastName</th>
-    <th>Address</th>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+        <h1> Customer Details</h1>
+        <table>
+          <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Address</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
 
- {deta.map(deta=> (
-              <tr key={deta.id} >
-        
-                      <td>{deta.firstName}</td>
-                       <td>{deta.lastName}</td>
-                      <td>{deta.address}</td>
-                      
-              </tr>
-                   
-           
+          {deta.map(deta => (
+            <tr key={deta.id} >
+
+              <td>{deta.firstName}</td>
+              <td>{deta.lastName}</td>
+              <td>{deta.address}</td>
+
+            </tr>
+
+
           ))}
- 
 
 
 
 
-</table>
-</div>
+
+        </table>
+      </div>
 
 
-      
+
     </div>
   )
 }

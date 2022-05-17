@@ -6,21 +6,6 @@ import Fetch from './components/Fetch';
 
 function App() {
 
-
-
-  // const [deta, setDeta] = useState("")
-  // useEffect(() => {
-
-  //   fetch('http://localhost:3000/info')
-  //     .then(res => {
-  //       return res.json();
-  //     }).then(data => {
-  //       console.log(data);
-  //       // setFormData(data);
-  //       // setDeta(data);
-  //     })
-  // })
-
   const [formData, setFormData] = React.useState(
 
     {
