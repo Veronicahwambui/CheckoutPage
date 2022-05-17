@@ -6,20 +6,20 @@ import Fetch from './components/Fetch';
 
 function App() {
 
-  <Fetch/>
 
-  const [deta, setDeta] = useState("")
-  useEffect(() => {
 
-    fetch('http://localhost:3000/info')
-      .then(res => {
-        return res.json();
-      }).then(data => {
-        console.log(data);
-        // setFormData(data);
-        // setDeta(data);
-      })
-  })
+  // const [deta, setDeta] = useState("")
+  // useEffect(() => {
+
+  //   fetch('http://localhost:3000/info')
+  //     .then(res => {
+  //       return res.json();
+  //     }).then(data => {
+  //       console.log(data);
+  //       // setFormData(data);
+  //       // setDeta(data);
+  //     })
+  // })
 
   const [formData, setFormData] = React.useState(
 
@@ -88,7 +88,8 @@ function App() {
 
   return (
 
-    <>
+    <> 
+    
       <div className='header'>
         <h1>Checkout Page</h1>
       </div>
@@ -219,46 +220,11 @@ function App() {
       </div>
 
 
-      <div>
-
-        <h1> Customer Details</h1>
-        <table>
-          <tr>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>Address</th>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          {/* {deta.map(deta=> (
-              <tr key={deta.id} >
-        
-                      <td>{deta.FirstName}</td>
-                       <td>{deta.LastName}</td>
-                      <td>{deta.address}</td>
-                      
-              </tr>
-                   
-           
-          ))} */}
-
-
-
-
-        </table>
-      </div>
-
+      
       
 
+      
+      <Fetch/>
     </>
   
   );

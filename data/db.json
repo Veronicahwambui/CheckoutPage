@@ -2,13 +2,13 @@
   "info": [
     {
       "id": 1,
-      "FirstName": "Vero",
-      "LastName": "Rove",
-      "Email": "verorove@gmail.com",
-      "Address": "13122",
-      "PhoneNumber": "07827213816",
+      "firstName": "Vero",
+      "lastName": "Rove",
+      "email": "verorove@gmail.com",
+      "address": "13122",
+      "phoneNumber": "07827213816",
       "location": "Nairobi",
-      "Fullname": "vero Revo",
+      "fullname": "vero Revo",
       "Amount": "3000",
       "pin": "34563456"
     },

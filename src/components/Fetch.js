@@ -13,6 +13,7 @@ const Fetch = () => {
         return response.json()
       })
       .then(data => {
+        console.log(data);
         setDeta(data)
       })
   }
@@ -23,16 +24,44 @@ const Fetch = () => {
 
   return (
     <div>
-      
 
-      {deta.length > 0 && (
-        <tr>
-          {deta.map(deta => (
-            <td key={deta.id}>{deta.name}</td>
+
+<div>
+
+<h1> Customer Details</h1>
+<table>
+  <tr>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Address</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+ {deta.map(deta=> (
+              <tr key={deta.id} >
+        
+                      <td>{deta.firstName}</td>
+                       <td>{deta.lastName}</td>
+                      <td>{deta.address}</td>
+                      
+              </tr>
+                   
+           
           ))}
-        </tr>
-      )}
  
+
+
+
+
+</table>
+</div>
+
+
+      
     </div>
   )
 }
