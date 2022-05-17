@@ -47,6 +47,42 @@
       "amount": "",
       "pin": "",
       "id": 4
+    },
+    {
+      "firstName": "Mitchelle",
+      "lastName": "Wambui",
+      "email": "mitchelle@gmail.com",
+      "phoneNumber": "0756978977",
+      "address": "654",
+      "location": "Nairobi,Mombasa road",
+      "fullname": "Mitchelle  Wabui",
+      "amount": "3000",
+      "pin": "666777777777",
+      "id": 5
+    },
+    {
+      "firstName": "John",
+      "lastName": "Maina",
+      "email": "maina@gmail.com",
+      "phoneNumber": "07777887776",
+      "address": "65657",
+      "location": "Nairobi,Kikuyu",
+      "fullname": "John maina",
+      "amount": "5000",
+      "pin": "785268973p480w",
+      "id": 6
+    },
+    {
+      "firstName": "John",
+      "lastName": "Maina",
+      "email": "maina@gmail.com",
+      "phoneNumber": "07777887776",
+      "address": "65657",
+      "location": "Nairobi,Kikuyu",
+      "fullname": "John maina",
+      "amount": "5000",
+      "pin": "785268973p480w",
+      "id": 7
     }
   ]
 }

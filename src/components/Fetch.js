@@ -1,37 +1,44 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-function Fetch() {
+
+
+    
+
+const Fetch = () => {
+  const [deta, setDeta] = useState([])
+
+  const fetchData = () => {
+    fetch('http://localhost:3000/info')
+      .then(response => {
+        return response.json()
+      })
+      .then(data => {
+        setDeta(data)
+      })
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
 
   return (
     <div>
-       <h1> Customer Details</h1>
-    {/* <table>
-  <tr>
-    <th>FirstName</th>
-    <th>LastName</th>
-    <th>Address</th>
-  </tr>
-  
- 
-{deta.map(deta=> (
-              <tr key={deta.id} >
-        
-                      <td>{deta.FirstName}</td>
-                       <td>{deta.LastName}</td>
-                      <td>{deta.address}</td>
-                      
-              </tr>
-                   
-           
+      
+
+      {deta.length > 0 && (
+        <tr>
+          {deta.map(deta => (
+            <td key={deta.id}>{deta.name}</td>
           ))}
-
+        </tr>
+      )}
  
-</table> */}
-
-
     </div>
   )
 }
 
 export default Fetch
+
+
+
 
